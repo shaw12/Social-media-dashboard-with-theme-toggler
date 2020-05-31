@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background-color: white;
+    color: #63687e;   
+}
+body.night{
+    background: hsl(230, 17%, 14%);
+    color: hsl(228, 34%, 66%);
+}
+body.night .mini h2,
+body.night .total-count,
+body.night .header-overview{
+    color: #fff;
+}
+body.night .card{
+    background-color:hsl(228, 28%, 20%);
+}
+
+.toggle{
+    position: absolute;
+    background:hsl(230, 22%, 74%);
+    width: 45px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.toggle.active{
+    background: linear-gradient(to right, #378fe6, #3eda82);
+}
+.toggle:before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.toggle.active:before{
+    left: 27px;
+    background: hsl(228, 28%, 20%);
+}
+
+
+.btn-tog{
+   display: inline-flex;
+   align-items: center;
+   width: 270px;
+   margin-top: -40px;
+}
+
+.btn-tog .text{
+    margin-top: 20px;
+    margin-right: 20px !important;
+    font-weight: 700;
+}
+.btn-tog .toggle{
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .mini{
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-bottom: 40px;
+}
+.container .mini h2{
+    font-size: 28px;
+    color: hsl(230, 17%, 14%);
+}
+.container .mini p{
+    margin-top: -25px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    flex-wrap: wrap;
+    margin-left: 120px;
+    margin-right: 120px;
+    
+}
+.card {
+    width: 185px;
+    padding: 15px 35px 23px 35px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    background-color: #f0f2fa;
+    text-align: center;
+  }
+
+.card .icon-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .icon-user img{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px !important;
+}
+
+.card .icon-user h4{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.total-count{
+    color: hsl(230, 17%, 14%);
+    font-size: 55px;
+    font-weight: 700;
+    margin: 2px 0 0px 0;
+}
+.follower-subs{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+.day-count{
+    font-size: 12px;
+    font-weight: 600;
+    color: hsl(163, 72%, 41%);
+}
+.day-count-red{
+    color: hsl(356, 69%, 56%);
+}
+.day-count img{
+    margin-bottom: 2px;
+    margin-right: 1px;
+}
+#facebook{
+    border-top: 4px solid hsl(208, 92%, 53%);
+}
+#twitter{
+    border-top: 4px solid hsl(203, 89%, 53%);
+}
+#instagram{
+    border-top: 4px solid linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+}
+#instagram::before{
+    content: '';
+    position: absolute;
+    top: -4px;
+    bottom: 1px;
+    left: 1px;
+    right: 1px;
+    background: linear-gradient(to right, #fdc468, #df4996);
+    content: '';
+    z-index: -1;
+    border-radius: 6px;
+
+}
+#youtube{
+    border-top: 4px solid hsl(348, 97%, 39%);
+}
+.upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+.below{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.below p{
+    font-size: 38px;
+}
+.header-overview{
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 120px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.card-overview{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+a{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+    .card-container,
+    .card-overview{
+        margin-left: 0px;
+        margin-right: 0px;
+        justify-content: center;
+    }
+    .card{
+        width: 80%;
+    }
+    #header{
+        display: flex;
+        flex-direction: column;
+    }
+    .mini{
+        width: 95%;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #63687e;
+        margin-left: 0px !important;
+        margin-left: 10px !important;
+    }
+    .mini h2{
+        font-size: 24px;
+    }
+    .btn-tog{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .btn-tog .text{
+        margin-left: 10px;
+    }
+    .btn-tog .toggle{
+        right: 0;
+        margin-right: 8px !important;
+    }
+}

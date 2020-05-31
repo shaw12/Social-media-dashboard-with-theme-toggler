@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container" id="header">
+      <div class="mini">
+        <h2>Social Media Dashboard</h2>
+        <p>Total Followers: 23,004</p>
+      </div>
+      <div class="btn-tog">
+        <div class="text">
+          <p>Dark Mode</p>
+        </div>    
+        <div class="toggle"></div>
+      </div>
+    </div>
+    
+    <div class="card-container">
+      <div id="facebook" class="card">
+        <div class="icon-user">
+          <img src="./images/icon-facebook.svg" alt="Facebook Icon">
+          <h4 class="username">@nathanf</h4>
+        </div> 
+        <p class="total-count">1987</p>
+        <p class="follower-subs">Followers</p>
+        <span class="day-count">
+          <img src="./images/icon-up.svg" alt="Up Arrow Icon"> 12 Today
+        </span> 
+      </div>
+      
+      <div id="twitter" class="card">
+        <div class="icon-user">
+          <img src="./images/icon-twitter.svg" alt="icon-twitter">
+          <h4 class="username">@nathanf</h4>
+        </div> 
+        <p class="total-count">1044</p>
+        <p class="follower-subs">Followers</p>
+        <span class="day-count">
+          <img src="./images/icon-up.svg" alt="Up Arrow Icon"> 99 Today
+        </span> 
+      </div>
+
+      <div id="instagram" class="card">
+        <div class="icon-user">
+          <img src="./images/icon-instagram.svg" alt="icon-facebook">
+          <h4 class="username">@nathanf</h4>
+        </div> 
+        <p class="total-count">11k</p>
+        <p class="follower-subs">Followers</p>
+        <span class="day-count">
+          <img src="./images/icon-up.svg" alt="Up Arrow Icon"> 1099 Today
+        </span> 
+      </div>
+
+      <div id="youtube" class="card">
+        <div class="icon-user">
+          <img src="./images/icon-youtube.svg" alt="Facebook Icon">
+          <h4 class="username"> Nathan F.</h4>
+        </div> 
+        <p class="total-count">8239</p>
+        <p class="follower-subs">Subscribers</p>
+        <span class="day-count day-count-red">
+          <img src="./images/icon-down.svg" alt="Up Arrow Icon"> 12 Today
+        </span> 
+      </div>
+    </div>
+
+    <div class="header-overview">Overview - Today</div>
+    <div class="card-overview">
+      
+
+      <div class="card">
+        <div class="upper">
+          <p>Page Views</p>
+          <img src="./images/icon-facebook.svg" alt="">
+        </div>
+        <div class="below">
+          <p class="total-count">87</p>
+          <span class="day-count">
+            <img src="./images/icon-up.svg" alt="Up Arrow Icon"> 3%
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="upper">
+          <p>Likes</p>
+          <img src="./images/icon-facebook.svg" alt="">
+        </div>
+        <div class="below">
+          <p class="total-count">52</p>
+          <span class="day-count day-count-red">
+            <img src="./images/icon-down.svg" alt="Up Arrow Icon"> 2%
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="upper">
+          <p>Likes</p>
+          <img src="./images/icon-instagram.svg" alt="">
+        </div>
+        <div class="below">
+          <p class="total-count">5462</p>
+          <span class="day-count">
+            <img src="./images/icon-up.svg" alt="Up Arrow Icon"> 2257%
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="upper">
+          <p>Page Views</p>
+          <img src="./images/icon-instagram.svg" alt="">
+        </div>
+        <div class="below">
+          <p class="total-count">52k</p>
+          <span class="day-count">
+            <img src="./images/icon-up.svg" alt="Up Arrow Icon"> 1375%
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="upper">
+          <p>Retweets</p>
+          <img src="./images/icon-twitter.svg" alt="">
+        </div>
+        <div class="below">
+          <p class="total-count">117</p>
+          <span class="day-count">
+            <img src="./images/icon-up.svg" alt="Up Arrow Icon"> 303%
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="upper">
+          <p>Likes</p>
+          <img src="./images/icon-twitter.svg" alt="">
+        </div>
+        <div class="below">
+          <p class="total-count">507</p>
+          <span class="day-count">
+            <img src="./images/icon-up.svg" alt="Up Arrow Icon"> 553%
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="upper">
+          <p>Likes</p>
+          <img src="./images/icon-youtube.svg" alt="">
+        </div>
+        <div class="below">
+          <p class="total-count">107</p>
+          <span class="day-count day-count-red">
+            <img src="./images/icon-down.svg" alt="Up Arrow Icon"> 19%
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="upper">
+          <p>Total Views</p>
+          <img src="./images/icon-youtube.svg" alt="">
+        </div>
+        <div class="below">
+          <p class="total-count">1407</p>
+          <span class="day-count day-count-red">
+            <img src="./images/icon-down.svg" alt="Up Arrow Icon"> 12%
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mohd Yasir Hussain</a>.
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.toggle').click(function(){
+        $('.toggle').toggleClass('active')
+        $('body').toggleClass('night')
+      })
+    })
+  </script>
+</body>
+</html>
